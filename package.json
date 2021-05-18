@@ -1,6 +1,7 @@
 {
   "name": "sentcordts",
-  "version": "1.26.0",
+  "description": "A api wrapper of sentcord for posting your bot server and shard stats",
+  "version": "1.26.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
