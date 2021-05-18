@@ -1,46 +1,37 @@
-# sentcordts
-## A api wrapper of [sentcord](https://sentcord.com/) for posting your bot server and shard stats
-<br>
-
-
-## Install
-```diff
-+ npm
-npm install sentcordts
-+ yarn
-yarn add sentcordts 
-```
-## Usage
-```js
-/**
- * Import sentcordts
- * @class Sentcord
- */
-const { Sentcord } = require("sentcordts");
-
-const client = new Sentcord({
-    token: "Api key", // Your api key of the bot from sentcord
-    id: "Bot id" // Your bot id
-});
-
-/**
- * Post your total servers and shards
- */
-client.post("Total Numbers", "Total Shards");
-/** 
- * Log a custom text to check if the package is working or not
- * It's not necessary
-*/
-client.log("Text");
-```
-## Example
-```js
-const { Sentcord } = require("sentcordts");
-
-const client = new Sentcord({
-    token: "E2BT0ivIoSgE4tEQdIJXVLv31n0mOlc5gn7XYVyUhZ9kONz3IkIhZP", 
-    id: "819050202508820491"
-});
-
-client.post("85", "1");
-```
+{
+  "name": "sentcordts",
+  "description": "A api wrapper of sentcord for posting your bot server and shard stats",
+  "version": "1.26.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@ayanaware/logger": "^2.2.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "@types/node-fetch": "^2.5.10",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "keywords": [
+    "sentcord",
+    "discord",
+    "botlist"
+  ],
+  "repository": {
+    "url": "https://github.com/Colderry/sentcordts"
+  },
+  "author": {
+    "name": "Colderry",
+    "url": "https://github.com/Colderry"
+  }
+}
