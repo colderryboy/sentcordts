@@ -1,5 +1,5 @@
 # sentcordts
-## A api wrapper for [sentcord](https://sentcord.com/) for posting your bot server and shard stats
+## A api wrapper of [sentcord](https://sentcord.com/) for posting your bot server and shard stats
 <br>
 
 
