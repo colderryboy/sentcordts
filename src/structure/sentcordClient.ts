@@ -40,13 +40,14 @@ export default class sentCordClient {
          */
         if (!shards) shards = "0";
 
-        await fetch(`https://sentcord.com/api/bot/${this.id}`, {
+        await fetch(`https://api.sixaiy.com/v2/sentcord`, {
             method: "POST",
             headers: {
                 "Authorization": `${this.apikey}`,
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
+                id: id,
                 serverCount: servers,
                 shardCount: shards
             })
