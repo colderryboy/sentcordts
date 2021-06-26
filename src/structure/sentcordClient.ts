@@ -2,8 +2,8 @@ import fetch from "node-fetch";
 import { Logger } from "@ayanaware/logger";
 
 export default class sentCordClient {
-    public apikey: String;
-    public id: String;
+    private apikey: String;
+    private id: String;
 
     constructor(options = {
         token: "",
